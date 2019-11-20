@@ -30,15 +30,14 @@ class App < Sinatra::Base
     case op
     when 'add'
       out = params[:number1].to_i + params[:number2].to_i
-      "#{out.to_s}"
     when 'subtract'
       out = params[:number1].to_i - params[:number2].to_i
-      "#{out.to_s}"
     when 'multiply'
       out = params[:number1].to_i * params[:number2].to_i
     when 'divide'
       out = params[:number1].to_i / params[:number2].to_i
 end
-      "#{out.to_s}"
+out = out.to_s
+      "#{out}"
     end
 end
